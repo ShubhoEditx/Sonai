@@ -1,10 +1,8 @@
-import math
-
-import config
+import math    
 
 from pyrogram.types import InlineKeyboardButton
 
-from SlayerX.utils.formatters import time_to_seconds
+from AnonXMusic.utils.formatters import time_to_seconds
 
 
 def track_markup(_, videoid, user_id, channel, fplay):
@@ -62,20 +60,22 @@ def stream_markup_timer(_, chat_id, played, dur):
             )
         ],
         [
-            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
-            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(text="◁", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="☊", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="◯", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
         [
             InlineKeyboardButton(
-                text="✭ ᴜᴘᴅᴀᴛᴇs ✭", url=config.SUPPORT_CHANNEL
+                text="🕊️𝐒ʜᴜʙʜᴏ❤️",
+                url=f"https://t.me/about_shubho",
             ),
             InlineKeyboardButton(
-                text="✭ sᴜᴘᴘᴏʀᴛ ✭", url=config.SUPPORT_CHAT
-            )
+                text="❤️𝐒ᴏʜɪɴɪ🕊️",
+                url=f"https://t.me/About_Sohini",
+            ),
         ],
+        [InlineKeyboardButton(text="𝐁𝐨𝐦𝐠 𝐅𝐚𝐦𝐢𝐥𝐲 ♡", url=f"https://t.me/+_uBvn0Jpv3w5MzVl")],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
@@ -84,12 +84,22 @@ def stream_markup_timer(_, chat_id, played, dur):
 def stream_markup(_, chat_id):
     buttons = [
         [
-            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
-            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(text="◁", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="☊", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="◯", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
+        [
+            InlineKeyboardButton(
+                text="🕊️𝐒ʜᴜʙʜᴏ❤️",
+                url=f"https://t.me/about_shubho",
+            ),
+            InlineKeyboardButton(
+                text="❤️𝐒ᴏʜɪɴɪ🕊️",
+                url=f"https://t.me/about_sohini",
+            ),
+        ],
+        [InlineKeyboardButton(text="𝐁𝐨𝐧𝐠 𝐅𝐚𝐦𝐢𝐥𝐲 ♡", url=f"https://t.me/+_uBvn0Jpv3w5MzVl")],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
@@ -100,11 +110,11 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
         [
             InlineKeyboardButton(
                 text=_["P_B_1"],
-                callback_data=f"SlayerPlaylists {videoid}|{user_id}|{ptype}|a|{channel}|{fplay}",
+                callback_data=f"AnonyPlaylists {videoid}|{user_id}|{ptype}|a|{channel}|{fplay}",
             ),
             InlineKeyboardButton(
                 text=_["P_B_2"],
-                callback_data=f"SlayerPlaylists {videoid}|{user_id}|{ptype}|v|{channel}|{fplay}",
+                callback_data=f"AnonyPlaylists {videoid}|{user_id}|{ptype}|v|{channel}|{fplay}",
             ),
         ],
         [
@@ -164,3 +174,6 @@ def slider_markup(_, videoid, user_id, query, query_type, channel, fplay):
         ],
     ]
     return buttons
+
+
+    
