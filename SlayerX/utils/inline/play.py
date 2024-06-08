@@ -66,15 +66,15 @@ def stream_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="𝐒𝙷𝚄𝙱𝙷𝙾 ♡",
-                url=f"https://t.me/hello_deear",
+                text="𝐂𝚁𝙰𝚉𝚈 ♡",
+                url=f"https://t.me/Crazzy08",
             ),
             InlineKeyboardButton(
                 text="𝐔𝚉𝙿𝙳𝙰𝚃𝙴𝚂 ♡",
-                url=f"https://t.me/about_Shubho",
+                url=f"https://t.me/GAsupportcommunity",
             ),
         ],
-        [InlineKeyboardButton(text="𝐒𝚄𝙿𝙿𝙾𝚁𝚃 ♡", url=f"https://t.me/Shubho_Creations")],
+        [InlineKeyboardButton(text="𝐒𝚄𝙿𝙿𝙾𝚁𝚃 ♡", url=f"https://t.me/crazzysuport")],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
@@ -90,15 +90,15 @@ def stream_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="𝐒𝙷𝚄𝙱𝙷𝙾 ♡",
-                url=f"https://t.me/hello_deear",
+                text="𝐂𝚁𝙰𝚉𝚈 ♡",
+                url=f"https://t.me/Crazzy08",
             ),
             InlineKeyboardButton(
                 text="𝐔𝙿𝙳𝙰𝚃𝙴𝚂 ♡",
-                url=f"https://t.me/about_shubho",
+                url=f"https://t.me/GAsupportcommunity",
             ),
         ],
-        [InlineKeyboardButton(text="𝐒𝚄𝙿𝙿𝙾𝚁𝚃 ♡", url=f"https://t.me/Shubho_Creations")],
+        [InlineKeyboardButton(text="𝐒𝚄𝙿𝙿𝙾𝚁𝚃 ♡", url=f"https://t.me/crazzysuport")],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
