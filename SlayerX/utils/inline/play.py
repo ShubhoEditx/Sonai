@@ -66,15 +66,15 @@ def stream_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="🕊️𝐒ʜᴜʙʜᴏ❤️",
-                url=f"https://t.me/about_shubho",
+                text="𝐒𝙷𝚄𝙱𝙷𝙾 ♡",
+                url=f"https://t.me/hello_deear",
             ),
             InlineKeyboardButton(
-                text="❤️𝐒ᴏʜɪɴɪ🕊️",
-                url=f"https://t.me/About_Sohini",
+                text="𝐔𝚉𝙿𝙳𝙰𝚃𝙴𝚂 ♡",
+                url=f"https://t.me/about_Shubho",
             ),
         ],
-        [InlineKeyboardButton(text="𝐁𝐨𝐦𝐠 𝐅𝐚𝐦𝐢𝐥𝐲 ♡", url=f"https://t.me/+_uBvn0Jpv3w5MzVl")],
+        [InlineKeyboardButton(text="𝐒𝚄𝙿𝙿𝙾𝚁𝚃 ♡", url=f"https://t.me/Shubho_Creations")],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
@@ -90,15 +90,15 @@ def stream_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="🕊️𝐒ʜᴜʙʜᴏ❤️",
-                url=f"https://t.me/about_shubho",
+                text="𝐒𝙷𝚄𝙱𝙷𝙾 ♡",
+                url=f"https://t.me/hello_deear",
             ),
             InlineKeyboardButton(
-                text="❤️𝐒ᴏʜɪɴɪ🕊️",
-                url=f"https://t.me/about_sohini",
+                text="𝐔𝙿𝙳𝙰𝚃𝙴𝚂 ♡",
+                url=f"https://t.me/about_shubho",
             ),
         ],
-        [InlineKeyboardButton(text="𝐁𝐨𝐧𝐠 𝐅𝐚𝐦𝐢𝐥𝐲 ♡", url=f"https://t.me/+_uBvn0Jpv3w5MzVl")],
+        [InlineKeyboardButton(text="𝐒𝚄𝙿𝙿𝙾𝚁𝚃 ♡", url=f"https://t.me/Shubho_Creations")],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
