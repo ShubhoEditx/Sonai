@@ -12,6 +12,7 @@ API_HASH = getenv("API_HASH", "")
 
 # Get your token from @BotFather on Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN", None)
+
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
@@ -21,7 +22,7 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 180))
 LOGGER_ID = int(getenv("LOGGER_ID", None))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", "7146599240"))
+OWNER_ID = int(getenv("OWNER_ID", "6203163206"))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -30,15 +31,15 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
-    "UPSTREAM_REPO", "https://github.com/ShubhoEditx/Sonai",
+    "UPSTREAM_REPO", "https://github.com/ShubhoEditx/G_A-Music", # dont Change this otherwise u get error 🧧
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/about_shubho")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/shubho_creations")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/GAsupportcommunity")
+SUPPORT_CHAT = getenv("SUPPORT_GROUP", "https://t.me/crazzysuport")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -76,21 +77,21 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
+    "START_IMG_URL", "https://graph.org/file/fc55cf501661789341af7.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
+    "PING_IMG_URL", "https://graph.org/file/fc55cf501661789341af7.jpg"
 )
-PLAYLIST_IMG_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
-STATS_IMG_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
-TELEGRAM_AUDIO_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
-TELEGRAM_VIDEO_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
-STREAM_IMG_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
-SOUNCLOUD_IMG_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
-YOUTUBE_IMG_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
+PLAYLIST_IMG_URL = "https://graph.org/file/fc55cf501661789341af7.jpg"
+STATS_IMG_URL = "https://graph.org/file/fc55cf501661789341af7.jpg"
+TELEGRAM_AUDIO_URL = "https://graph.org/file/fc55cf501661789341af7.jpg"
+TELEGRAM_VIDEO_URL = "https://graph.org/file/fc55cf501661789341af7.jpg"
+STREAM_IMG_URL = "https://graph.org/file/fc55cf501661789341af7.jpg"
+SOUNCLOUD_IMG_URL = "https://graph.org/file/fc55cf501661789341af7.jpg"
+YOUTUBE_IMG_URL = "https://graph.org/file/fc55cf501661789341af7.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://graph.org/file/fc55cf501661789341af7.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://graph.org/file/fc55cf501661789341af7.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://graph.org/file/fc55cf501661789341af7.jpg"
 
 
 def time_to_seconds(time):
@@ -111,4 +112,5 @@ if SUPPORT_CHAT:
     if not re.match("(?:http|https)://", SUPPORT_CHAT):
         raise SystemExit(
             "[ERROR] - Your SUPPORT_CHAT url is wrong. Please ensure that it starts with https://"
-        )
+)
+        
